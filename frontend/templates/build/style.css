@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-size: 26px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    line-height: 1.5 !important;
+    text-align: justify;
+}
+h4{
+    font-size: 19px;
+    color: black;
+    font-weight:bold;
+}
+body{
+    transition: all 0.4s ease;
+}
+.general{
+    width: 1140px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    padding: 0px 60px;
+}
+.head-center{
+    text-align: center;
+}
+.head-center .flex-end .data{
+    text-align: end !important;
+}
+
+.head-center h4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.farm-name{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main-tables{
+    width: 100%;
+}
+
+.main-text h4{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.main-table h4{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.main-table p{
+    padding-left: 20px;
+}
+.main-tables{
+    margin-bottom: 20px;
+}
+
+.evalution{
+    padding-bottom: 7px;
+}
+
+.main .text h4,.foot-text h4{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.foot-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot-text h4{
+    padding-bottom: 30px;
+}
+
+.foot-text h5{
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    font-weight:700;
+    padding-bottom: 20px;
+}
+
+.foot-adress{
+    text-align: center;
+}
+
+p span{
+    font-weight: bold;
+}
+
+.innraqam{
+    text-align: center !important;
+    display: block;
+}

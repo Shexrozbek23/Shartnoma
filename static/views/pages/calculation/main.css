@@ -1,0 +1,40 @@
+.form-control {
+}
+
+table.table-result {
+  font-size: 14px;
+}
+
+table.table.table-result thead th {
+  padding: 10px;
+  text-transform: none;
+  vertical-align: middle;
+}
+
+table.table.table-result tbody td {
+  padding: 10px;
+}
+
+table td,
+table th {
+  padding: 10px;
+  text-align: center;
+}
+
+table .rate {
+  font-weight: bold;
+  color: #000000;
+  text-transform: none;
+}
+
+.table-flow {
+  overflow: auto;
+}
+
+.table-flow table {
+  font-size: 14px;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}

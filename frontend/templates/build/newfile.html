@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aferta</title>
+    <style>*{
+      padding: 0;
+      margin: 0;
+  }
+  p{
+      font-size: 14px;
+      font-family:'Times New Roman', Times, serif;
+      color: black;
+      line-height: 1.3 !important;
+      text-align: justify;
+      border: 1px solid #fff;
+  }
+  h4{
+      font-size: 16px;
+      color: black;
+      font-weight:bold;
+      border: 1px solid #fff;
+  }
+  body{
+      transition: all 0.4s ease;
+  }
+  .general{
+      width: 800px;
+      border: 1px solid #ccc;
+      margin: 20px auto;
+      padding: 0px 60px;
+  }
+  .head-center{
+      text-align: center;
+  }
+  .head-center .flex-end .data{
+      text-align: end !important;
+  }
+  
+  .head-center h4{
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+  
+  .farm-name{
+      text-align: center;
+      padding-top: 20px;
+  }
+  
+  .main-tables{
+      width: 100%;
+  }
+  
+  .main-text h4{
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 5px;
+  }
+  
+  .main-table h4{
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 5px;
+  }
+  
+  .main-tables tr td{
+   padding-left: 10px;
+  }
+  .main-table p{
+      padding-left: 20px;
+  }
+  .main-tables{
+      margin-bottom: 20px;
+  }
+  
+  .evalution{
+      padding-bottom: 7px;
+  }
+  
+  .main .text h4,.foot-text h4{
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 5px;
+  }
+  
+  .foot-info{
+      display: flex;
+      justify-content: space-between;
+      border:1px solid black;
+  }
+  
+  .foot-text h4{
+      padding-bottom: 30px;
+  }
+  
+  .foot-text h5{
+      padding-top: 20px;
+      font-size: 15px;
+      color: black;
+      font-weight:700;
+      padding-bottom: 20px;
+      border: 1px solid #fff;
+  }
+  
+  .foot-adress{
+      text-align: center;
+  }
+  
+  p span{
+      font-weight: bold;
+  }
+  
+  .innraqam{
+      text-align: center !important;
+      display: block;
+  }
+  
+  .foot-customer,.foot-performer{
+      width: 50%;
+  }
+  
+  .signature{
+      padding-top: 20px;
+      border: 1px solid #fff;
+  }</style>
+</head>
+<body>
+    <div class="general">
+        <div class="header">
+            <div class="head-center">
+              <h4>AGROKIMYOVIY XIZMATLAR KO'RSATISH BO'YICHA   SHARTNOMA</h4>
+              
+                 
+              <p class="innraqam"><span >{{code_number}}</span> - son</p> 
+              <div class="flex-end">
+                  <p class="data"> {{ given_date }}</p>
+              </div>
+            </div>
+             <div class="head-text">
+                 <p class="farm-name">{{applicant_organization}} {{region}} viloyati  {{district}} tumani </p>   
+                 <p>(keyingi o'rinlarda Buyurtmachi deb yuritiladi) nomidan Ustav asosida faoliyat yurituvchi rahbari  {{applicant_fullname}}  bir tarafdan va <span>“Respublika Agrokimyoviy  tahlil markazi”</span>  (keyingi o'rinlarda <span>Ijrochi</span> deb yuritiladi) nomidan  Ishonchnoma asosida  faoliyat ko'rsatuvchi rahbari <span> {{general_inspection.name}}</span> ikkinchi tarafdan ushbu shartnomani quyidagilar haqida tuzdilar: </p>
+             </div>
+                         
+        </div>
+        <div class="main">
+            <div class="main-text">
+                <h4>I. SHARTNOMA PREDMETI</h4>
+                <p>1.1. O'zbekiston Respublikasi Fuqarolik kodeksining 370-moddasiga muvofiq agar quyida ko'rsatilgan shartlar qabul qilinib, xizmatlar uchun to'lov amalga oshirilsa, qabul qiluvchi yuridik yoki jismoniy shaxs Buyurtmachiga aylanadi.</p>
+                <p>1.2. Buyurtmachi Oferta shartnomasi (keyingi o'rinlarda - Shartnoma) shartlari bilan tanishganidan so'ng, Shartnomada ko'rsatilgan summani to'laydi.</p>
+                <p>1.3. Buyurtmachi Shartnomani belgilangan tartibda qabul qilib, Shartnoma matnida keltirib o'tilgan shakldagi barcha shartlar bilan tanishib chiqqanligini, rozi bo'lganligini hamda to'liq va so'zsiz qabul qilganligini tasdiqlaydi.</p>
+                <p>1.4. O'zbekiston Respublikasi Fuqarolik kodeksining 367-375-moddalari va «Elektron xujjat aylanishi to'grisida» gi, «Elektron raqamli imzo to'g'risidagi O'zbekiston Respublikasi Qonunlariga muvofiq Shartnomada Buyurtmachining muxri va /yoki imzosi talab etilmaydi hamda shunga asosan o'z yuridik kuchini saqlab qoladi.</p>
+                <p>1.5. Mazkur sharnoma bo'yicha <span> “Ijrochi” </span>, <span>“Buyurtmachi”</span> ning topshirig'iga ko'ra agrokimyoviy tahlil xizmatlarini ko'rsatish, tuproq, mineral o'g'it, toksikologik va radiologik laboratoriya ishlarini bajarish, xulosa va tavsiyalar berish majburiyatini oladi. Bunda buyurtmachi ijrochiga topshiriq berish, ishni qabul qilib olish va uning haqini to'lash majburiyatini oladi.</p>
+            </div>
+            <div class="main-table">
+                <h4>II. SHARTNOMANING BAHOSI VA HISOB-KITOB TARTIBI.</h4>
+                <p>2.1. Bajarilgan ishlarning nomi va qiymati  </p>
+                <table border="1px" class="main-tables"  align="center" height="200" cellspacing="0">
+                    <tr>
+                      <th>Ish turi</th>
+                      <th>O'lchov birligi, namuna /gektar</th>
+                      <th>Bir birlik uchun narxi, so'm</th>
+                      <th>Namuna soni/Gektar</th>
+                      <th>Jami qiymati so'm</th>
+                    </tr>
+                    <tr>
+                      <td>{{service_type.type}}</td>
+                      <td>{{numer_or_hectare}}</td>
+                      <td>1 {{numer_or_hectare}} uchun {{service_type.value}} so'm</td>
+                      <td>{{square_of_services}}</td>
+                      <td>{{payment_amount}}</td>
+                    </tr>
+                    <!-- <tr>
+                      <td>Jami </td>
+                      <td>Salom shexroz</td>
+                      <td>Salom shexroz</td>
+                      <td>Salom shexroz</td>
+                      <td>Salom shexroz</td>
+                    </tr> -->
+                  </table>
+                  <p class="evalution">2.2. Mazkur shartnomaning umumiy bahosi  </p>
+                  <p><span>{{payment_amount}}</span> so'm(qo'shimcha qiymat solig'isiz) tashkil etadi.</p>
+                  <p>2.3. Agrokimyoviy tahlil ishlari, jumladan laboratoriya tahlili ishlarini bajarish hamda xulosa va tavsiyalar berish ishlari uchun oldindan 30 foiz to'lov amalga oshiriladi.</p>
+                  <p>2.4. <span>“Buyurtmachi”</span> shartnomada ko'rsatilgan ishlar, bajarilgan ishlar dalolatnomasi asosida topshirilgandan so'ng 10 kun ichida to'liq hisob-kitobni amalga oshiradi.</p>
+                  <p>2.5. Elektr energiyasi, yoqilg'i moylash materiallari, kimyoviy reaktivlar va oylik ish haqi narxlarining o'zgarishi munosabati bilan shartnomaga belgilangan tartibda narxlar bo'yicha qo'shimcha kiritilishi mumkin.</p>
+            </div>
+           <div class="text">
+               <h4>III. TARAFLARNING HUQUQ VA MAJBURIYATLARI</h4>
+               <p>3.1. <span>“Buyurtmachi”ning huquqlari:</span></p>
+               <p>a) <span>“Ijrochi” </span> dan ushbu shartnoma asosida berilgan topshiriqqa binoan muayyan ishni bajarilishini talab qilish;</p>
+               <p>b) bajarilgan ishlarni sifatini nazorat qilish;</p>
+               <p>v) bajarilgan ishlar yuzasidan nuqsonlarni tuzatishni <span>“Ijrochi”</span> dan talab qilish;</p>
+               <p>g) <span>“Ijrochi”</span> dan agrokimyoviy tahlil xizmatlari bo'yicha barcha xujjatlarni belgilangan muddatda yetkazib berishni talab qilish;</p>
+               <p>d) agrokimyoviy tahlil xizmatlari, jumladan laboratoriya tahlili ishlarini bajarish hamda xulosa va tavsiyalar berish narxi bo'yicha kalkulyatsiyani talab qilish.</p>
+               <p>3.2. <span>“Buyurtmachi”</span> ning majburiyatlari:</p>
+               <p>a) agrokimyoviy tahlil, jumladan laboratoriya tahlili ishlarini bajarish bo'yicha xulosa va tavsiyalar berish uchun zarur bo'lgan barcha xujjatlarni <span>“Ijrochi”</span> ga taqdim etish;</p>
+               <p>b) agrokimyoviy tahlil, jumladan laboratoriya tahlili ishlarini bajarish bo'yicha xulosa va tavsiyalar berishda ishtirok etish va amaliy yordam berish;</p>
+               <p>v) mazkur shartnomada ko'rsatilgan narx bo'yicha amalga oshirilgan xizmatlar uchun shartnomada belgilangan muddatda xaq to'lash.</p>
+               <p>3.3. “Ijrochi”ning huquqlari:</p>
+               <p>a) agrokimyoviy tahlil ishlari, jumladan laboratoriya tahlillarini bajarish hamda xulosa va tavsiyalar berish uchun mazkur shartnomaning 2.2 va 2.3 bandlariga muvofiq amaldagi qonun xujjatlardagi belgilangan tartibda va hamda uzil-kesil hisob-kitob qilinishini, shuningdek, bajarilgan ishlar uchun qabul qilish-topshirish hujjatlari (dalolatnoma)ni belgilangan muddatda “Buyurtmachi” tomonidan qabul qilinishini talab qilish;</p>
+               <p>b) berilgan topshiriqqa muvofiq agrokimyo tahlil ishlarining yakuniy hulosalarini qabul qilish assosiz rad etilishi natijasida yetkazilgan zararni <span>“Buyurtmachi”</span> dan talab qilish.</p>
+               <p>3.4. <span> “Ijrochi”ning majburiyatlari:</span> </p>
+               <p>a) amalga oshiriladigan agrokimyo tahlil ishlarining sifatini shartnomada belgilangan talablarga, shuningdek amaldagi me'yorlarga muvofiqligini ta'minlash;</p>
+               <p>b) amalga oshiriladigan agrokimyoviy tahlil ishlarining shartnomada belgilangan muddatlarda bajarilishini ta'minlash;</p>
+               <p>v) shartnoma shartlari va normativlardan chekinishga yo'l qo'ygan bo'lsa, sifatsiz bajarilgan ishlar aniqlangan hollarda kamchiliklarni ”Buyurtmachi”ning talabi bilan 10 kun muddatda o'z hisobidan bartaraf etish;</p>
+               <p>g) kutilayotgan natijalarni olish mumkin emasligi yoki ishlarni davom ettirish maqsadga muvofiq emasligi aniqlangan taqdirda, bu haqda buyurtmachini darhol xabardor qilishi;</p>
+
+           </div>
+           <div class="text">
+             <h4>IV. SHARTNOMANING BAJARILIShI</h4>
+             <p>4.1. Majburiyatlar mazkur shartnoma shartlari va qonun hujjatlari talablariga muvofiq zarur tarzda bajarilishi kerak.</p>
+             <p>Agar taraflar o'z zimmalariga olgan barcha majburiyatlar bajarilishini ta'minlasa, shartnoma bajarilgan deb hisoblanadi.</p>
+             <p>4.2. Agrokimyoviy tahlil ishlari, jumladan laboratoriya tahlili ishlarini bajarish bo'yicha xulosa va tavsiyalar berish ishlarini topshirish-qabul qilish hujjatlari (dalolatnoma) tuzilgan sana <span> “Ijrochi”</span> tomonidan shartnoma bo'yicha majburiyatlar bajarilgan sana hisoblanadi.</p>
+             <p>4.3. <span>“Ijrochi”</span> ning bank hisob-raqamiga shartnoma bahosida ko'rsatilgan pul mablag'ining kelib tushgan sanasi ko'rsatilagan xizmat (bajarilgan ish)larga haq to'lash bo'yicha <span>“Buyurtmachi”</span> tomonidan majburiyatlar bajarilgan sana hisoblanadi.</p>
+             <p>4.4. Taraflar o'rtasida munosabatlar ular tomonidan mazkur shartnomaning barcha shartlari bajarilgan va hisob-kitob to'liq tugallangan taqdirda to'xtatiladi.</p>
+             <p>4.5. Mazkur shartnomani amal qilish muddati 20____ yil _____________ gacha hisoblanib, mazkur shartnomaning amal qilish muddatini tugashi taraflar o'rtasidagi shartnomada ko'rsatilgan majburiyatlarini to'liq bajarishlikni istisno etmaydi.</p>
+           </div>
+           <div class="text">
+             <h4>V. TARAFLARNING JAVOBGARLIGI  </h4>
+             <p>5.1. <span>“Ijrochi” </span> tomonidan agrokimyoviy tahlil ishlarining sifati va hujjatlarda aniqlangan kamchiliklar <span>“Ijrochi”</span> hisobidan 10 kun muddatda bartaraf etilib <span>“Buyurtmachi”</span> ga topshiriladi.</p>
+             <p>5.2. <span>“Ijrochi”</span> tomonidan shartnomada ko'rsatilgan muddatda va kelishilgan miqdordagi sifatli bajarilgan ishlarning qabul qilishdan asossiz bosh tortganligi uchun <span>“Buyurtmachi”</span> <span>“Ijrochi”</span> ga bajarilgan xizmat qiymatining 5 foizi miqdorida jarima to'laydi.  </p>
+             <p>5.3. <span>“Ijrochi”</span> tomonidan tayyorlangan xulosa va tavsiyalarda xatoliklar mavjud bo'lganda ushbu xatoliklarni 10 kun muddatda tuzatib beradi yoki <span>“Buyurtmachi”</span> ga bajarilgan ish hajmining 5 foiz miqdorida jarima to'laydi.</p>
+             <p>5.4. Agrokimyoviy tahlil ishlari, jumladan laboratoriya tahlili ishlarini bajarish bo'yicha xulosa va tavsiyalar berish ishlari asossiz kechiktirilgan yoki to'liq bajarilmagan taqdirda <span>“Ijrochi”</span> <span>“Buyurtmachi”</span> ga kechiktirilgan har bir kun uchun majburiyat bajarilmagan qismining 0,5 foiz miqdorida penya to'laydi, biroq bunda peniyaning umumiy summasi bajarilmagan ishlar qiymatining 50 foizidan ortiq bo'lmasligi kerak. Penya to'lanishi shartnoma majburiyatlarini buzgan tomonni shartnomani zarur tarzda bajarishdan va ko'rsatiladigan xizmatni kechiktirilishi yoki bajarilmasligi tufayli yetkazilgan zararlar qoplanishidan ozod etmaydi.</p>
+             <p>5.5. Shartnomaga muvofiq belgilangan muddatlarda bajarilgan agrokimyo tahlil ishlari uchun tegishli xaqlar o'z vaqtida  to'lanmaganda <span> “Buyurtmachi”  </span><span>“Ijrochi”</span> ga muddati kechiktirilgan xar bir kun uchun kechiktirilgan to'lov summasining 0,5 foizi miqdorida peniya to'laydi, biroq bu kechiktirilgan to'lov summasining 50 foizidan ortiq bo'lmasligi kerak.</p>
+             <p>5.6. Ushbu shartnomada nazarda tutilmagan javobgarlik va boshqa masalalar O'zbekiston Respublikasining amaldagi qonun hujjatlari bilan tartibga solinadi.</p>
+
+           </div>
+           <div class="text">
+             <h4>VI. FORS-MAJOR VA JAVOBGARLIKDAN OZOD ETISH</h4>
+             <p>6.1. Taraflardan biri shartnomani fors-major holatlari, ya'ni yengib bo'lmaydigan kuch (favqulodda va muayyan sharoitlarda oldini olib bo'lmaydigan vaziyatlar (zilzila, qurg'oqchilik, suv toshqini, yong'in, sel, do'l, jala va boshqa tabiiy ofatlar) tufayli, bajarmagan yoki lozim darajada bajarmaganligini isbotlasa, javobgar bo'lmaydi.</p>
+             <p>6.2. Ushbu shartnoma shartlarini bajarishga to'sqinlik qiluvchi fors-major holatlarining boshlanishi va tugash to'g'risida taraflar zudlik bilan bir-birlarini hamda yengib bo'lmaydigan kuch holatlari (fors-major) ni tasdiqlash bo'yicha komissiyani yozma ravshda xabardor qilishlari shart.</p>
+             <p>6.3. Yengib bo'lmaydigan kuch holatlari (fors-major) ni tasdiqlash bo'yicha komissiya bunday holatlar oqibatida yoki “Ijrochi” aybisiz shartnomalar bo'yicha majburiyatlar bajarilmaganligi uchun “Ijrochi”ni javobgarlikdan ozod qilish bo'yicha xulosa berishlari mumkin.</p>
+             <p>6.4. Fors-major holatlari bo'yicha kelishmovchiliklar va nizoli masalalar kelib chiqqan taqdirda tomonlar, qoidaga ko'ra, mustaqil ravishda yoki tuman (shaxar)lar hokimliklari huzurida tashkil etiladigan yengib bo'lmaydigan kuch holatlari (fors-major)ni tasdiqlash bo'yicha komissiya ishtirokida ularni sudgacha hal etish chora-tadbirlarini ko'radilar.  </p>
+             <p>Fors-major holatlarini aniqlashda shartnoma taraflari qatnashishi kerak.</p>
+           </div>
+           <div class="text">
+             <h4>VII. NIZOLARNI HAL ETISH TARTIBI</h4>
+             <p>7.1. Mazkur shartnoma bo'yicha kelishmovchiliklar va nizoli masalalar kelib chiqqan taqdirda, taraflar qoidaga ko'ra, mustaqil ravishda ularni sudgacha hal etish choralarini ko'radilar.</p>
+             <p>7.2. Taraflar o'zaro kelisha olmagan taqdirda, kelishmovchilik va nizolar Toshkent tumanlararo iqtisodiy sudida hal qilinadi.</p>
+           </div>
+           <div class="text">
+             <h4>VIII. ShARTNOMANING AMAL QILISHI.</h4>
+             <p>8.1. Taraflar o'rtasidagi munosabatlar ular tomonidan mazkur shartnomaning barcha shartlari bajarilgan va hisob-kitob to'liq tugallangan taqdirda to'xtatiladi.</p>
+             <p>8.2. Taraflarda shartnoma nusxalari, shu jumladan unga kiritiladigan barcha o'zgartirish va qo'shimchalar tomonlar shartnoma majburiyatlarining hammasini bajargan vaqtdan boshlab uch yil mobaynida tegishli tarzda saqlanadi.</p>
+           </div>
+           <div class="text">
+             <h4>IX. YAKUNLOVCHI  QOIDALAR</h4>
+             <p>9.1. Mazkur shartnoma taraflarning kelishuviga ko'ra yoki bir taraf shartnoma shartlarini jiddiy ravishda buzgan taqdirda, ikkinchi taraflarning talabi bo'yicha sud tartibida bekor qilinishi mumkin.</p>
+             <p>9.2. Mazkur shartnomaga har qanday o'zgartirish va qo'shimchalar ular yozma shaklda tuzilib va taraflarning vakolatli vakillari tomonidan imzolanishi sharti bilan haqiqiy hisoblanadi.</p>
+             <p>9.3. Mazkur shartnoma ikki nusxada tuziladi. Shartnomaning barcha nusxalari teng yuridik kuchga egadir.</p>
+             <p>9.4. Shartnoma bajarilishini bir tomonlama rad etishga yoki shartnoma shartlarini bir tomonlama o'zgartirishga yo'l qo'yilmaydi, qonun hujjatlarda belgilangan hollar bundan mustasno.</p>
+           </div>
+        </div>
+        <div class="footer" style="border: solid 1px green;">
+  
+            <div class="foot-info" >
+              <div class="foot-performer">
+                <!-- <h5>«Ijrochi»</h5> -->
+                <p class="foot-adress">“Toshkent  viloyat Agrokimyoviy  tahlil markazi” </p> 
+                <p>Manzil:  <span>{{adress}}</span></p>
+                <p>X/R: <span>{{x_r}}</span></p>
+                <p>Sh.X: <span>{{sh_x}}</span></p>
+                <p>Bank: <span>{{bank}} </span></p>
+                <p>MFO: <span>{{mfo}}</span></p>
+                <p>OKED: <span>{{oked}}</span></p>
+                <p>INN: <span>{{inn}}</span></p>
+                <p>Telefon: : <span>{{phone_number}}</span></p>
+                
+                
+              </div>
+              <div class="foot-customer">
+                <!-- <h5 style="display: inline;">«Buyurtmachi»</h5>
+                <p style="display: inline;" class="foot-adress">______________________</p> -->
+                <p>Manzil: <span>{{region}} Vill .{{district}} Tumani</span></p>
+                <p>X/R: <span>___________</span></p>
+                <p>SH.X: <span>{{applicant_fullname}}</span></p>
+                <p>Bank: <span>___________</span></p>
+                <p>MFO: <span>___________</span></p>
+                <p>INN: <span>{{applicant_tin}}</span></p>
+                <p>OKED: <span>___________</span></p>
+                <p>Telefon: +998<span>{{applicant_phone}}</span></p>
+                <div class="signature">
+                  <p>______________________</p>
+                  <span>M.O'. /imzo, mansabi, F.I.Sh./</span>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

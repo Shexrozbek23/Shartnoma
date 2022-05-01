@@ -1,0 +1,8 @@
+.red {
+  color: red;
+}
+
+.delete-icon {
+  cursor: pointer;
+  font-size: 18px;
+}
